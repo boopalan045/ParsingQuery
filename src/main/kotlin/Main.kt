@@ -1,4 +1,4 @@
-
+//main
 fun main(args: Array<String>) {
     //input arguments
     val input = "param1=42&param2=54&param3=ololo&param3=trololo&param4=5&param5"
@@ -11,6 +11,7 @@ internal interface QueryParams {
     fun execute(query: String) : Map<String, List<String>>
 }
 
+//func for parsing query
 class QueryParamsImpl : QueryParams {
     override fun execute(query: String): Map<String, List<String>> {
         val dat = query
